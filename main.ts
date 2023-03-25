@@ -35,7 +35,7 @@ function main() {
   let output: string;
 
   if (args.length === 1 || args.length === 2) {
-    let configFilePath = path.join(process.cwd(), "postman-json-chopper.config");
+    let configFilePath = path.join(process.cwd(), "postman-json-chopper.json");
     if(args.length === 2){
       configFilePath = path.join(process.cwd(), args[1]);
       let directory = path.parse(configFilePath).dir
@@ -44,7 +44,7 @@ function main() {
     const config = readConfigFile(configFilePath);
 
     if (config === null) {
-      console.error("Error: postman-json-chopper.config file not found");
+      console.error("Error: postman-json-chopper.json file not found");
       process.exit(1);
     }
 
