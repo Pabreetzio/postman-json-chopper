@@ -1,0 +1,46 @@
+{
+  "name": "postman-json-chopper",
+  "version": "1.0.0",
+  "description": "Splits up large postman collection json file into folders and smaller files and merges them back together",
+  "bin": {
+    "postman-json-chopper": "./dist/main.js"
+  },
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge": "ts-node merger.ts",
+    "split": "ts-node splitter.ts",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pabreetzio/postman-json-chopper.git"
+  },
+  "keywords": [
+    "postman",
+    "json",
+    "splitter",
+    "merger",
+    "chopper",
+    "split",
+    "merge",
+    "chop",
+    "oas3"
+  ],
+  "author": "Patrick Graham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pabreetzio/postman-json-chopper/issues"
+  },
+  "homepage": "https://github.com/Pabreetzio/postman-json-chopper#readme",
+  "devDependencies": {
+    "@types/slug": "^5.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "slug": "^8.2.2"
+  }
+}
