@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Splits up large postman collection json file into folders and smaller files and merges them back together",
   "bin": {
-    "postman-json-chopper": "./dist/main.js"
+    "postman-json-chopper": "./build/main.js"
   },
   "main": "main.js",
   "scripts": {
