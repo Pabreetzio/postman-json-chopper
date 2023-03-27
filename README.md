@@ -27,7 +27,7 @@ Postman JSON Chopper provides two main functions: split and merge.
 To split a large Postman collection JSON file into smaller files and folders, use the following command:
 
 ```bash
-postman-json-chopper split <input-file> <output-folder>
+postman-json-chopper split <input-file> <output-file>
 ```
 - `<input-file>`: Path to the JSON file you want to split.
 - `<output-file>`: Path to the root file where the split files will referenced and stored relative to.
